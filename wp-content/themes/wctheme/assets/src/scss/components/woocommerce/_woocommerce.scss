@@ -1,0 +1,11 @@
+.woocommerce {
+    @import "buttons";
+    @import "cart";
+    @import "quantity";
+    @import "calendar";
+    @import "checkout";
+    @import "notices";
+    @import "breadcrumbs";
+}
+
+@import "mini-cart";

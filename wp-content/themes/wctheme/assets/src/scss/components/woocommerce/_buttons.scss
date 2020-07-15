@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;400&display=swap');
+a,
+input,
+button {
+    &.button {
+        //min-height: rem(40px);
+        transition: color .3s ease-in-out, background-color .3s ease-in-out;
+        &.continue-button {
+            padding: rem(10px) 0;
+            background: none;
+            font-size: rem(14px);
+            font-weight: 600;
+            color: $black-color;
+            text-decoration: underline;
+        }
+        &.checkout-button {
+            padding: rem(10px) rem(35px);
+            background-color: $carmel-color;
+            border-radius: rem(50px);
+            border: 2px solid $carmel-color;
+            color: $white-color;
+            font-size: rem(14px);
+            font-family: Poppins, sans-serif;
+            &:hover {
+                color: $gray-btn-color;
+                background-color: transparent;
+            }
+            @media (min-width: $breakpoint-small) {
+                font-weight: 400;
+                padding: rem(10px) rem(35px);
+            }
+        }
+        &.login-button,
+        &.register-button {
+            @extend .checkout-button;
+        }
+        &.lost-password-button {
+            @extend .continue-button;
+            font-size: rem(12px);
+            font-weight: 400;
+            font-family: Montserrat, sans-serif;
+        }
+        &.guest-button {
+            @extend .lost-password-button;
+            padding: 0;
+            font-size: rem(16px);
+            font-weight: 500;
+            color: $gray-btn-color;
+        }
+        &.buy-as-guest {
+            @extend .checkout-button;
+            width: 100%;
+            text-align: center;
+        }
+        &.social-button {
+            @extend .checkout-button;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: rem(9px) rem(15px);
+            font-weight: 500;
+            font-family: Montserrat, sans-serif;
+            color: $black-color;
+            background-color: transparent;
+            border-color: $black-color;
+            border-width: 1px;
+            &:hover {
+                background-color: $black-color;
+                color: $white-color;
+            }
+            img {
+                margin-right: rem(20px);
+            }
+            @media (min-width: $breakpoint-small) {
+                padding: rem(9px) rem(35px);
+            }
+        }
+    }
+}

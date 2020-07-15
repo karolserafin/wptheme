@@ -1,0 +1,11 @@
+<svg width="24" height="17" viewBox="0 0 24 17" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <g fill="#292929">
+      <g>
+        <rect width="24" height="2" rx="1"/>
+        <rect y="14.632" width="24" height="2" rx="1"/>
+        <rect y="7.316" width="19.895" height="2" rx="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

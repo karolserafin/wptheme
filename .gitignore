@@ -1,0 +1,8 @@
+wp-content/uploads/
+wp-content/themes/wctheme/inc/tmp/
+wp-content/themes/wctheme/inc/composer.lock
+wp-content/themes/wctheme/inc/vendor/
+wp-content/debug.log
+wp-config.php
+.idea
+/node_modules/

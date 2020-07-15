@@ -1,0 +1,12 @@
+.page {
+    &__content {
+        color: $black-color;
+        font-size: rem(14px);
+        font-weight: 500;
+        line-height: rem(26px);
+
+        ol {
+            list-style: decimal;
+        }
+    }
+}

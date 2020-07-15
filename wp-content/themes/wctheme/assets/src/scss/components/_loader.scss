@@ -1,0 +1,59 @@
+// Animation svg
+
+.woocommerce .blockUI.blockOverlay:before,.woocommerce .loader:before {
+    background: none !important;
+}
+
+.animation__loader {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(255,255,255,0.75);
+}
+
+.animation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 42%;
+}
+
+.animation svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.animation__blender {
+    height: 60px;
+}
+
+.animation__bowl {
+    height: 50px;
+}
+        
+.animation__blender {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -25px;
+}
+
+.animation--seventh .animation__blender {           
+    animation: rotateMoveSecond 1.5s ease-in-out infinite;
+}
+
+@keyframes rotateMoveSecond {
+    0% , 100%{
+        transform: translateY(10px) rotate(8deg);
+    }
+    50% {
+        transform: translateY(0) rotate(0);
+    }
+    75% {
+        transform: translateY(10px) rotate(-8deg);
+    }
+}

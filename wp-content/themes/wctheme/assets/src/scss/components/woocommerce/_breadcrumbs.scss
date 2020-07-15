@@ -1,0 +1,25 @@
+&.single-product {
+
+	.woocommerce-breadcrumb {
+
+		font-weight: 400;
+		color: #493f39;
+		font-size: rem(12px);
+	    top: rem(32px);
+
+	    @media (max-width: 640px) {
+	        top: rem(18px);
+	    }
+
+	    a {
+	        text-decoration: underline;
+	        font-weight: 500;
+	        transition: color .3s;
+	        &:hover {
+	            color: $carmel-color;
+	        }
+	    }
+
+	}
+
+}

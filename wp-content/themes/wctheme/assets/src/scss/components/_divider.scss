@@ -1,0 +1,11 @@
+.divider {
+    font-size: rem(14px);
+    font-weight: 600;
+    color: $gray-cart-border-color;
+    margin: rem(15px) 0;
+
+    > ::before {
+        border-width: 2px;
+        border-color: $gray-cart-border-color;
+    }
+}

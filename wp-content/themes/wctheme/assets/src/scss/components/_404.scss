@@ -1,0 +1,41 @@
+.section__404 {
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    padding: rem(65px) rem(10px) rem(128px);
+
+    &--image {
+
+    }
+
+    &--content {
+        &__headline {
+            color: $black-color;
+            font-size: rem(21px);
+            font-weight: 400;
+            line-height: rem(32px);
+            margin-bottom: rem(42px);
+        }
+        &__links {
+            max-width: rem(220px);
+            margin: 0 auto;
+            &--back {
+                font-size: rem(14px);
+                color: $black-color;
+                font-weight: 500;
+                margin: rem(15px) 0 0 0;
+                a {
+                    text-decoration: underline;
+                    color: $carmel-color;
+                    &:hover {
+                        color: $carmel-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+}

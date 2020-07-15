@@ -1,0 +1,204 @@
+.footer {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 1rem;
+    &__block-title {
+        color: $carmel-color;
+        font-family: 'Montserrat', sans-serif;
+        font-size: rem(18px);
+        margin-bottom: rem(30px);
+        font-weight: 700;
+    }
+    &__menu {}
+    &__menu--sitemap {}
+    ul {
+        padding: 0;
+        li {
+            text-align: left;
+            margin-bottom: rem(15px);
+            @media (max-width: 639px) {
+                text-align: center;
+            }
+            a {
+                color: $white-color;
+                font-weight: 500;
+                font-size: rem(12px);
+            }
+        }
+    }
+    @media (max-width: 639px) {
+        padding-top: rem(15px);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.logo-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: rem(24px) 0 rem(50px) 0;
+    &__img {
+        width: rem(95px);
+        height: rem(75px);
+    }
+    &__para {
+        font-size: rem(12px);
+        line-height: 1.8;
+        max-width: rem(520px);
+    }
+    @media (max-width: 639px) {
+        display: none;
+    }
+}
+
+.footer__company__data,
+.footer__company__contact {
+    p {
+        font-size: rem(12px);
+        margin: 0 0 15px 0;
+        &:first-of-type {
+            font-weight: 500;
+        }
+    }
+}
+
+footer {
+    p,
+    a {
+        text-align: left;
+        color: $white-color;
+        line-height: 1.4;
+        font-size: rem(12px);
+        @media (max-width: 639px) {
+            text-align: center;
+        }
+    }
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: rem(43px);
+    a {
+        transition: .3s color;
+    }
+    a:hover,
+    .uk-link:hover,
+    .uk-link-toggle:hover .uk-link,
+    .uk-link-toggle:focus .uk-link {
+        color: $carmel-color;
+        text-decoration: none;
+    }
+    @media (max-width: 639px) {
+        justify-content: center;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    li {
+        position: relative;
+        margin-right: rem(20px);
+        &:nth-of-type(1) {
+            &:after {
+                content: url(../img/svg/fb.svg);
+                display: block;
+                width: rem(28px);
+                height: rem(28px);
+                position: absolute;
+                top: 0;
+            }
+        }
+        &:nth-of-type(2) {
+            &:after {
+                content: url(../img/svg/insta.svg);
+                display: block;
+                width: rem(28px);
+                height: rem(28px);
+                position: absolute;
+                top: 0;
+            }
+        }
+        a {
+            z-index: 1;
+            color: transparent;
+            width: rem(28px);
+            height: rem(28px);
+            position: relative;
+            display: block;
+        }
+    }
+    @media (max-width: 639px) {
+        justify-content: center;
+        li {
+            margin-right: 0;
+            padding: 0 rem(10px);
+        }
+    }
+}
+
+.bottom-footer-color {
+    background: $carmel-dark-color;
+}
+
+.mobile-nexted-grid-margin {
+    @media (max-width: 639px) {
+        margin-left: -15px!important;
+    }
+}
+
+.footer-sitemap {
+    padding: 0;
+}
+
+footer .footer__menu {
+    .menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        @media (min-width: 640px) {
+            max-height: rem(220px);
+        }
+
+        li {
+            &:nth-of-type(9) {
+                margin-bottom: 47px;
+            }
+        }
+        @media (max-width: 639px) {
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
+            li {
+                &:nth-of-type(8) {
+                    margin-bottom: .9375rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 639px) {
+    .footer__block-title {
+        margin-bottom: rem(16px);
+    }
+}
+
+.section__banner .uk-slideshow-items .banner__list {
+    @media (max-width: 575px) {
+        padding-left: 0;
+    }
+}

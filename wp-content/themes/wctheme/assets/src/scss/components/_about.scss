@@ -1,0 +1,32 @@
+.about {
+    &__content {
+        z-index: 1;
+        color: $black-color;
+        line-height: rem(20px);
+        font-size: rem(14px);
+
+        @media (min-width: $breakpoint-large) {
+            background-color: rgba(#f2f2f2, 1);
+            padding: rem(40px) rem(90px);
+            border-radius: 12px;
+            position: absolute;
+            top: rem(-87px);
+            right: rem(-80px);
+            left: 0;
+            padding: rem(80px) rem(110px);
+        }
+
+    }
+
+    &__image {
+        z-index: 1;
+        border-radius: 12px;
+
+        img {
+            @media (min-width: $breakpoint-large) {
+                max-width: calc(100% + 40px);
+                margin-right: -40px;
+            }
+        }
+    }
+}

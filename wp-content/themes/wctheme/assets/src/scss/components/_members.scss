@@ -1,0 +1,86 @@
+.members {
+    &__list {
+        padding-top: rem(103px);
+        padding-bottom: rem(120px);
+    }
+
+    &__item {
+        $member: &;
+        margin-top: rem(35px) !important;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+
+            #{$member}__name {
+                font-size: rem(21px);
+                font-weight: 700;
+                color: $radio-button-color;
+                margin-bottom: 5px;
+            }
+
+            #{$member}__title {
+                font-size: rem(16px);
+                font-weight: 500;
+                line-height: 24px;
+                color: $carmel-color;
+                margin: 0;
+            }
+
+            #{$member}__bio {
+                font-size: rem(14px);
+                font-weight: 400;
+                line-height: 24px;
+                color: $black-color;
+                margin-top: 10px;
+            }
+
+            @media (max-width: $breakpoint-small - 1) {
+                order: 2;
+            }
+        }
+
+        &__image {
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            &:nth-child(odd) {
+                img {
+                    border-radius: 25rem 0 25rem 25rem;
+
+                    @media (min-width: $breakpoint-small) {
+                        border-radius: 110px 0 110px 110px;
+                    }
+                }
+            }
+
+            &:nth-child(even) {
+                img {
+                    border-radius: 0 25rem 25rem 25rem;
+
+                    @media (min-width: $breakpoint-small) {
+                        border-radius: 0 110px 110px 110px;
+                    }
+                }
+            }
+
+            @media (max-width: $breakpoint-small - 1) {
+                order: 1;
+            }
+        }
+
+        @media (min-width: $breakpoint-small) {
+            margin-top: 120px !important;
+        }
+
+        &:first-of-type {
+            margin-top: 0 !important;
+        }
+
+        &:nth-child(even) {
+            text-align: right;
+        }
+    }
+}

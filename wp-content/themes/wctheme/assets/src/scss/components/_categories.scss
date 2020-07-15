@@ -1,0 +1,126 @@
+.section__categories {
+    padding: 0 rem(10px);
+    position: relative;
+
+    .categories__list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        li {
+            display: flex;
+            flex-direction: column;
+            @media (min-width: 992px) {
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: rem(120px);
+            }
+            &::nth-last-child(1) {
+                margin-bottom: 0;
+            }
+            >div {
+                @media (min-width: 992px) {
+                    width: 50%;
+                }
+            }
+            .category__image {
+                order: 1;
+                img {
+                    border-top-left-radius: rem(100px);
+                    border-top-right-radius: rem(100px);
+                    max-width: 100%;
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    object-fit: cover;
+                    margin-bottom: rem(15px);
+                    height: 175px;
+                    @media (min-width: 992px) {
+                        margin-bottom: 0;
+                        height: rem(410px);
+                    }
+                }
+            }
+            .category__content {
+                order: 2;
+                h5 {
+                    font-size: rem(18px);
+                    line-height: rem(24px);
+                    font-weight: 700;
+                    letter-spacing: 0.5px;
+                }
+                p {
+                    font-size: rem(14px);
+                    line-height: rem(24px);
+                    font-weight: 400;
+                    @media (min-width: 992px) {
+                        font-weight: 500;
+                    }
+                }
+                a {
+                    border: 2px solid $carmel-color;
+                    border-radius: rem(20px);
+                    font-size: rem(14px);
+                    color: #5f534d;
+                    padding-top: rem(5px);
+                    padding-bottom: rem(5px);
+                    font-weight: 700;
+                    margin-top: rem(21px);
+                    max-width: rem(159px);
+                    transition: background .3s;
+                    margin-bottom: rem(30px);
+                    max-width: 100%;
+                    width: 100%;
+                    @media (max-width: 991px) {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    @media (min-width: 992px) {
+                        padding-left: rem(35px);
+                        padding-right: rem(35px);
+                        width: auto;
+                        display: inline-flex;
+                        margin-top: 0;
+                    }
+                    &:hover {
+                        background: $carmel-color;
+                        color: $white-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+            &:nth-child(odd) {
+                .category__image {
+                    img {
+                        border-bottom-right-radius: rem(100px);
+                    }
+                    @media (min-width: 992px) {
+                        order: 2;
+                    }
+                }
+                .category__content {
+                    @media (min-width: 992px) {
+                        order: 1;
+                        padding: 0 rem(45px) 0 rem(110px);
+                    }
+                }
+            }
+            &:nth-child(even) {
+                .category__image {
+                    img {
+                        border-bottom-left-radius: rem(100px);
+                    }
+                    @media (min-width: 992px) {
+                        order: 1;
+                    }
+                }
+                .category__content {
+                    @media (min-width: 992px) {
+                        padding: 0 rem(110px) 0 rem(45px);
+                    }
+                }
+            }
+        }
+    }
+}

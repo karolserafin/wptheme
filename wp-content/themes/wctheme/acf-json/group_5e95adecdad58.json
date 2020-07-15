@@ -1,0 +1,43 @@
+{
+    "key": "group_5e95adecdad58",
+    "title": "Napis na tort",
+    "fields": [
+        {
+            "key": "field_5e95adf20efd8",
+            "label": "Napis na tort?",
+            "name": "is_cake_text",
+            "type": "true_false",
+            "instructions": "Jeżeli ten produkt jest produktem pomocniczym - dodatkowym napisem na tort, który można zamówić - zaznacz tą opcję.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Ten produkt to napis na tort",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1586867774
+}

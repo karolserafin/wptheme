@@ -1,0 +1,79 @@
+.references {
+    $references: &;
+
+    &__list {
+        padding-top: rem(30px);
+        position: relative;
+
+        @media (min-width: $breakpoint-small) {
+            padding-top: rem(70px);
+        }
+
+        @media (max-width: $breakpoint-small - 1) {
+            margin: 0 -15px;
+        }
+
+        .uk-dotnav {
+            a {
+                background: none;
+                width: 15px;
+                height: 15px;
+                border: 1px solid $carmel-color;
+            }
+
+            .uk-active {
+                a {
+                    background: $carmel-color;
+                }
+            }
+        }
+    }
+
+    &__item {
+        $reference: &;
+        padding: rem(40px) rem(10px);
+        border-radius: 22px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: rem(14px);
+
+        &__content {
+            color: $white-color;
+            line-height: 28px;
+            font-weight: 500;
+        }
+
+        &__author {
+            margin-top: rem(25px);
+            color: $carmel-color;
+            line-height: 28px;
+            font-weight: 700;
+        }
+
+        @media (min-width: $breakpoint-small) {
+            padding: rem(30px) rem(35px) rem(60px);
+        }
+
+        @media (max-width: $breakpoint-small - 1) {
+            border-radius: 0;
+        }
+    }
+
+    &__li {
+        &:nth-child(even) {
+            #{$references}__item {
+                background-image: url("../img/even-reference.jpg");
+            }
+        }
+
+        &:nth-child(odd) {
+            #{$references}__item {
+                background-image: url("../img/odd-reference.jpg");
+            }
+        }
+
+    }
+}

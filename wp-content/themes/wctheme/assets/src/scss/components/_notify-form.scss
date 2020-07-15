@@ -1,0 +1,96 @@
+.summary-container .cwginstock-subscribe-form {
+
+	margin-top: 15px;
+
+	.panel-primary {
+		border: none;
+		background: transparent;
+		box-shadow: none;
+		border-radius: 0px;
+	}
+
+	.panel-primary > .panel-heading {
+
+		background-color: transparent;
+		border: none;
+
+
+		h4 {
+			color: #000000;
+			font-size: 14px;
+			line-height: 18px;
+			cursor: pointer;
+			text-decoration: underline;
+
+			&:after {
+				content: '';
+				background: transparent url('../img/product_alert.png') no-repeat center center;
+				background-size: contain;
+				display: inline-block;
+				width: 20px;
+				height: 18px;
+				margin-left: 4px;
+				vertical-align: sub;
+			}
+
+		}
+
+	}
+
+	.panel-body {
+		padding: 0;
+		margin: 0 auto;
+		display: none;
+		max-width: 530px;
+
+		.row {
+			margin: 0;
+		}
+
+		.col-md-12 {
+			padding: 0;
+		}
+
+		.form-group {
+			display: block;
+
+			input {
+
+				border: 1px solid #BF883B;
+				padding: 12px 23px;
+				font-style: italic;
+				border-radius: 25px;
+				width: 100%;
+				font-size: 12px;
+				text-align: left !important;
+
+				&::placeholder {
+					color: rgba(0,0,0,0.35);
+					text-align: left;
+				}
+			}
+
+			.cwgstock_button {
+				@extend .checkout-button;
+				max-width: 200px;
+				background-color: #BF883B;
+				text-align: center !important;
+				font-style: normal;
+				position: absolute;
+				top: 0;
+				right: 0;
+				font-size: 14px;
+				line-height: 16px;
+				padding: 11px 23px;
+			}
+
+		}
+
+	}
+
+	.cwgstock_output {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+}

@@ -1,0 +1,40 @@
+.quantity {
+    display: flex;
+    align-items: center;
+
+    .qty {
+        // pointer-events: none;
+        width: rem(28px);
+        height: rem(22px);
+        border-radius: 4px;
+        padding: 0;
+        border: 1px solid $gray-border-color;
+        font-size: rem(16px);
+        font-weight: 500;
+
+        @media (min-width: $breakpoint-small) {
+            width: rem(28px);
+            height: rem(28px);
+        }
+    }
+
+    &__button {
+        border: none;
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: rem(14px);
+        height: rem(15px);
+        margin: 0 rem(8px);
+
+        &--minus {
+            margin-left: 0;
+            background-image: url("../img/svg/woocommerce/quantity-minus.svg");
+        }
+
+        &--plus {
+            margin-right: 0;
+            background-image: url("../img/svg/woocommerce/quantity-plus.svg");
+        }
+    }
+}

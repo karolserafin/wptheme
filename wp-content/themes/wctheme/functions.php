@@ -192,7 +192,7 @@ function wctheme_acf_op_init() {
 add_action('acf/init', 'wctheme_acf_op_init');
 
 function my_acf_init() {
-	acf_update_setting('google_api_key', 'AIzaSyBsU2iv51eXv3Fdf3_MB00ElspKjUh7bzs');
+	acf_update_setting('google_api_key', 'xxxxxxxxxx');
 }
 
 add_action('acf/init', 'my_acf_init');
